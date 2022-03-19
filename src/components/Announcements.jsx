@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Container=styled.div`
     height=40px;
-    background-color: #05595B;
+    background-color: #F05454;
     color: white;
     text-align: center;
     padding: 7px;

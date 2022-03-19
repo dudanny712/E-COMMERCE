@@ -1,12 +1,17 @@
-import { Badge, IconButton } from '@material-ui/core';
+import { Badge,  IconButton } from '@material-ui/core';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+
+
+
 
 const Container = styled.div `
     height : 60px;
     
 `;
+
+
 const Wrapper = styled.div`
  padding : 10px 20px;
  display : flex;
@@ -80,7 +85,8 @@ const Navbar = () => {
           <MenuItem>Login</MenuItem>
           <MenuItem>
             <IconButton aria-label="cart">
-            <Badge badgeContent={0} color="primary">
+            
+            <Badge badgeContent={1} color='primary'>
             <ShoppingCartOutlined />
   </Badge>
 </IconButton>
@@ -95,4 +101,7 @@ const Navbar = () => {
   )
 }
 
+
+
 export default Navbar
+
