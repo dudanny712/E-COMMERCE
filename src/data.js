@@ -4,7 +4,7 @@ export const sliderItems = [
       img: "../Images/Slide.jpg",
       title: "Best Spices in Germany!",
       desc: "Made with the best quality spices from India.",
-      bg: "f5fafd",
+      bg: "f5f5f5",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export const sliderItems = [
     {
       id: 2,
       img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      title: "LOUNGE-WEAR LOVE",
     },
     {
       id: 3,
