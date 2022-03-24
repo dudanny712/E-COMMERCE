@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^0.26.1",
     "react-persist": "^1.0.2",
     "redux-persist": "^6.0.0"
   }
