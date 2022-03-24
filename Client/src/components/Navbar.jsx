@@ -1,8 +1,10 @@
 import { Badge,  IconButton } from '@material-ui/core';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
+import { useSelector } from 'react-redux';
 import styled from 'styled-components'
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
 
 
@@ -73,6 +75,7 @@ ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 
 
 const Navbar = () => {
+  const quantity = useSelector(state=>state.cart.quantity)
   return (
     <Container>
       <Wrapper> 
@@ -91,14 +94,16 @@ const Navbar = () => {
           <Right>
           <MenuItem>Register</MenuItem>
           <MenuItem>Login</MenuItem>
+          <Link to="/cart">
           <MenuItem>
             <IconButton aria-label="cart">
             
-            <Badge badgeContent={1} color='primary'>
+            <Badge badgeContent={quantity} color='primary'>
             <ShoppingCartOutlined />
-  </Badge>
-</IconButton>
+          </Badge>
+            </IconButton>
           </MenuItem>
+          </Link>
               
               </Right> 
 
